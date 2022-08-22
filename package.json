@@ -1,0 +1,27 @@
+{
+  "name": "contentful-gql",
+  "version": "1.0.0",
+  "description": "Data fetching library alternative to the contentful package that uses graphql and typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanUcles/contentful-gql.git"
+  },
+  "keywords": [
+    "contentful",
+    "typescript",
+    "graphql"
+  ],
+  "author": "Jonathan Ucles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonathanUcles/contentful-gql/issues"
+  },
+  "homepage": "https://github.com/JonathanUcles/contentful-gql#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
