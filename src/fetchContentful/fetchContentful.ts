@@ -1,5 +1,5 @@
-
-const fetchContentful = async (query:string, variables:any) => {
+import { FetchContentfulResult, Variables } from './types'
+const fetchContentful = async <T, Y extends {  }> (query:string, variables:Variables<Y>):Promise<FetchContentfulResult<T>> => {
     let error = '';
     let isLoading = true;
     try {
@@ -28,7 +28,7 @@ const fetchContentful = async (query:string, variables:any) => {
         }
 
         
-    } catch (error) {
+    } catch (err) {
         let result = null
         error = 'Data Fetch Failed'
         isLoading = false
