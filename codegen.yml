@@ -1,0 +1,10 @@
+overwrite: true
+schema: "https://graphql.contentful.com"
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript-operations"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

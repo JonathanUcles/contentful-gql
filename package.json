@@ -1,27 +1,29 @@
 {
   "name": "contentful-gql",
-  "version": "1.0.0",
-  "description": "Data fetching library alternative to the contentful package that uses graphql and typescript.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonathanUcles/contentful-gql.git"
-  },
-  "keywords": [
-    "contentful",
-    "typescript",
-    "graphql"
+  "version": "0.0.1",
+  "description": "GraphQL Client for getting Contentful CMS Data",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
   ],
-  "author": "Jonathan Ucles",
+  "repository": "https://github.com/JonathanUcles/contentful-gql.git",
+  "author": "JonathanUcles",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JonathanUcles/contentful-gql/issues"
-  },
-  "homepage": "https://github.com/JonathanUcles/contentful-gql#readme",
   "devDependencies": {
-    "typescript": "^4.7.4"
+    "@graphql-codegen/cli": "2.11.6",
+    "@types/node": "^18.7.10",
+    "typescript": "^4.7.4",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@graphql-codegen/introspection": "2.2.1"
+  },
+  "dependencies": {
+    "graphql": "^16.6.0"
+  },
+  "peerDependencies": {
+    "graphql": "*"
+  },
+  "scripts": {
+    "codegen": "graphql-codegen --config codegen.yml"
   }
 }
