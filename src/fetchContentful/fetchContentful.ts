@@ -1,5 +1,5 @@
 import { FetchContentfulResult, Variables } from './types'
-const fetchContentful = async <T, Y extends {  }> (query:string, variables:Variables<Y>):Promise<FetchContentfulResult<T>> => {
+const fetchContentful = async <T extends {  }> (query:string, variables:Variables):Promise<FetchContentfulResult<T>> => {
     let error = '';
     let isLoading = true;
     try {
@@ -17,6 +17,7 @@ const fetchContentful = async <T, Y extends {  }> (query:string, variables:Varia
             })
             
         })
+        console.log(res)
         const result = await res.json();
         isLoading = false;
 
@@ -29,6 +30,7 @@ const fetchContentful = async <T, Y extends {  }> (query:string, variables:Varia
 
         
     } catch (err) {
+        console.log(err)
         let result = null
         error = 'Data Fetch Failed'
         isLoading = false

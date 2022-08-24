@@ -5,6 +5,6 @@ export interface FetchContentfulResult<T> {
     error?:string| null;
 
 }
-export type Variables<Y> = {
-    variables: Y | null;
+export type Variables= {
+     [key: string]: any 
 }
