@@ -1,6 +1,6 @@
 {
   "name": "contentful-gql",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "GraphQL Client for getting Contentful CMS Data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
