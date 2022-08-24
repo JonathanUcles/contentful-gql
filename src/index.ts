@@ -1,2 +1,2 @@
 export {default as fetchContentful} from './fetchContentful'
-export { markdownToHtml } from './markdownToHtml'
+export {default as  markdownToHtml } from './markdownToHTML'

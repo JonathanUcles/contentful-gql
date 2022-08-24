@@ -1,1 +1,1 @@
-export { default as markdownToHtml } from './markdownToHTML'
+export { default } from './markdownToHTML'
