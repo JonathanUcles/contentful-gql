@@ -1,6 +1,6 @@
 {
   "name": "contentful-gql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL Client for getting Contentful CMS Data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,6 +20,8 @@
     "@types/react": "^18.0.17",
     "jest": "^28.1.3",
     "react": "^18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
     "ts-jest": "^28.0.8",
     "typescript": "^4.7.4"
   },
@@ -28,9 +30,7 @@
   },
   "peerDependencies": {
     "graphql": "*",
-    "typescript": "*",
-    "react": "*"
-
-
+    "react": "*",
+    "typescript": "*"
   }
 }
